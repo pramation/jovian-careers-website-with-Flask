@@ -10,17 +10,25 @@
     
   </head>
   <body>
+    {% include 'navbar.html' %}
     <div class="container"> 
       <h1 class="text-center mt-4 mb-4"> Jovian Careers</h1>
-      <img class="img-fluid" id="banner" src="https://jovian-careers-website-1.pramation.repl.co/static/career.jpg" 
+      <img class="img-fluid" id="banner" src="/static/career.jpg" 
         >
       <style>
         #banner{ height:300px; width:100%;}
       </style>
       <h2 class="text-center"> About Jovian</h2>  
-      <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <div class="row margin-bottom:16px">
+        <div class="col-md-6">
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="col-md-6">
+         <img src="/static/corp-emp.jpg" style="height:320px; border-radius:9px"
+        </div>
+      </div>
       <h2 class="text-center mt-2 mb-4"> 
         Job Openings
       </h2>
