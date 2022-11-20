@@ -4,7 +4,7 @@ print("Hello")
 app= Flask(__name__)
 
 JOBS=[
-  {'id':1,"title":"Data Analyst","location":"Delhi, India","salary":"Rs. 10,00,000"},
+  {'id':1,"title":"Data Analyst","location":"Delhi, India","salary":"Rs. 70,00,000"},
   {'id':2,"title":"Data Scientist","location":"Pune, India"},
   {'id':3,"title":"Data Engineer","location":"Dallas, USA","salary":"$ 120,000"}
   
