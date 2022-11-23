@@ -26,3 +26,31 @@ def get_job_from_db(id):
       return None
     else:
       return(dict(rows[0]))
+
+def apply_to_job_db(job_id,application_data):
+  q_text=text("INSERT into applications(job_id,\
+                  full_name,\
+                  email,\
+                  linkedin_url,\
+                  education,\
+                  work_experience,\
+                  resume_url)\
+         VALUES ( :job_id,\
+                  :full_name,\
+                  :email,\
+                  :LinkedinURL,\
+                  :Education,\
+                  :Experience,\
+                  :resumeURL)")
+
+  with engine.connect() as conn:
+    conn.execute(q_text,job_id=job_id,
+                      full_name=application_data['full_name'],
+                      email=application_data['email'],
+                      LinkedinURL=application_data['LinkedinURL'],
+                      Education=application_data['Education'],
+                      Experience=application_data['Experience'],
+                      resumeURL=application_data['resumeURL'])
+
+    
+  
